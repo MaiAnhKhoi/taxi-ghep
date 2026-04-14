@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand system */
+  --brand-primary: #1e40af; /* Blue */
+  --brand-accent: #f97316; /* Orange */
+  --cta: #22c55e; /* Green (call/zalo) */
+
+  /* Surfaces */
+  --bg: #ffffff;
+  --bg-muted: #f3f4f6;
+
+  /* Text */
+  --text: #0f172a; /* slate-900 */
+  --text-muted: #475569; /* slate-600 */
+
+  /* Overlays */
+  --overlay: rgba(0, 0, 0, 0.6);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand-primary) 28%, white);
+}
+
+/* Premium animated background (lightweight) */
+.bg-aurora {
+  position: relative;
+}
+.bg-aurora.has-video::before {
+  /* keep some premium glow, but don't wash out the video */
+  opacity: 0.35;
+  filter: blur(22px);
+}
+.bg-aurora.has-video::after {
+  /* stronger contrast for text, less muddy video */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.22), rgba(0,  0, 0, 0.55));
+}
+
+.hero-text-shadow {
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55), 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero-subtext-shadow {
+  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+}
+.bg-aurora::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(700px 500px at 20% 25%, rgba(30, 64, 175, 0.42), transparent 55%),
+    radial-gradient(650px 480px at 75% 30%, rgba(249, 115, 22, 0.28), transparent 58%),
+    radial-gradient(900px 600px at 50% 75%, rgba(30, 64, 175, 0.22), transparent 60%);
+  filter: blur(30px);
+  opacity: 0.9;
+  transform: translate3d(0, 0, 0);
+  animation: auroraMove 10s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.bg-aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.6));
+  pointer-events: none;
+}
+@keyframes auroraMove {
+  0% {
+    transform: translate3d(-2%, -1%, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(2%, 1%, 0) scale(1.06);
+  }
+}
+
