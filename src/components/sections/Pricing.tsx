@@ -3,21 +3,27 @@ import { Container } from "@/components/ui/Container";
 
 const pricing = [
   {
-    route: "Đà Nẵng ↔ Quảng Ngãi",
-    price: "Từ 350.000đ",
-    note: "Đón tận nơi nội thành, có thể phụ thu xa.",
+    route: "Quảng Ngãi ↔ Đà Nẵng",
+    price: "250.000đ",
+    note: "Giá tuyến phổ biến, đón/trả tận nơi.",
     href: "/xe-ghep-da-nang-quang-ngai",
   },
   {
-    route: "Quảng Ngãi ↔ Bình Định",
-    price: "Từ 300.000đ",
-    note: "Chuyến linh hoạt theo giờ, xác nhận nhanh.",
+    route: "Quảng Ngãi ↔ Quy Nhơn",
+    price: "450.000đ",
+    note: "Linh hoạt giờ đi, xác nhận nhanh qua gọi/Zalo.",
     href: "/xe-ghep-quang-ngai-binh-dinh",
   },
   {
-    route: "Đà Nẵng ↔ Bình Định",
-    price: "Từ 650.000đ",
-    note: "Đi thẳng, tiết kiệm thời gian (đặt trước).",
+    route: "Quảng Ngãi ↔ Măng Đen",
+    price: "450.000đ",
+    note: "Đi thẳng tiện lợi, nên đặt trước để giữ lịch.",
+    href: "/#dat-xe",
+  },
+  {
+    route: "Đà Nẵng ↔ Măng Đen",
+    price: "700.000đ",
+    note: "Tuyến xa, ưu tiên đặt sớm để tối ưu chuyến.",
     href: "/#dat-xe",
   },
 ] as const;
@@ -33,7 +39,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {pricing.map((p) => (
             <Link
               key={p.route}

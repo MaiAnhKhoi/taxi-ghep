@@ -6,9 +6,10 @@ import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site";
 
 const routes = [
-  "Đà Nẵng ↔ Quảng Ngãi",
-  "Quảng Ngãi ↔ Bình Định",
-  "Đà Nẵng ↔ Bình Định",
+  "Quảng Ngãi ↔ Đà Nẵng",
+  "Quảng Ngãi ↔ Quy Nhơn",
+  "Quảng Ngãi ↔ Măng Đen",
+  "Đà Nẵng ↔ Măng Đen",
   "Khác (ghi chú thêm)",
 ] as const;
 
