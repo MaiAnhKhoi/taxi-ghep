@@ -4,26 +4,20 @@ import { Container } from "@/components/ui/Container";
 const pricing = [
   {
     route: "Quảng Ngãi ↔ Đà Nẵng",
-    price: "250.000đ",
-    note: "Giá tuyến phổ biến, đón/trả tận nơi.",
+    price: "200.000đ",
+    note: "Xe xuất phát tại Quảng Ngãi, đón/trả tận nơi.",
     href: "/xe-ghep-da-nang-quang-ngai",
   },
   {
     route: "Quảng Ngãi ↔ Quy Nhơn",
-    price: "450.000đ",
-    note: "Linh hoạt giờ đi, xác nhận nhanh qua gọi/Zalo.",
+    price: "350.000đ",
+    note: "Giá mềm, linh hoạt giờ — chỉ nhận chuyến từ Quảng Ngãi.",
     href: "/xe-ghep-quang-ngai-binh-dinh",
   },
   {
     route: "Quảng Ngãi ↔ Măng Đen",
-    price: "450.000đ",
-    note: "Đi thẳng tiện lợi, nên đặt trước để giữ lịch.",
-    href: "/#dat-xe",
-  },
-  {
-    route: "Đà Nẵng ↔ Măng Đen",
-    price: "700.000đ",
-    note: "Tuyến xa, ưu tiên đặt sớm để tối ưu chuyến.",
+    price: "350.000đ",
+    note: "Đặt trước để giữ lịch, xuất phát Quảng Ngãi.",
     href: "/#dat-xe",
   },
 ] as const;
@@ -35,11 +29,11 @@ export function Pricing() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Bảng giá minh bạch</h2>
           <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
-            Giá tham khảo theo tuyến. Gọi/Zalo để chốt giá chính xác theo điểm đón – trả và số khách.
+            Chỉ phục vụ xe xuất phát từ Quảng Ngãi. Giá tham khảo — gọi/Zalo để chốt giá theo điểm đón/trả và số khách.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
           {pricing.map((p) => (
             <Link
               key={p.route}

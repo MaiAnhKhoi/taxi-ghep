@@ -9,7 +9,7 @@ export const siteConfig = {
   address: "Miền Trung (Đà Nẵng - Quảng Ngãi - Bình Định)",
   defaultTitle: "Xe ghép Đà Nẵng - Quảng Ngãi - Bình Định | Giá rẻ, đón tận nơi",
   defaultDescription:
-    "Dịch vụ xe ghép tuyến Đà Nẵng ↔ Quảng Ngãi, Quảng Ngãi ↔ Bình Định. Giá rẻ, đón tận nơi, chạy liên tục. Gọi ngay hoặc nhắn Zalo để đặt xe nhanh.",
+    "Xe ghép xuất phát Quảng Ngãi: Đà Nẵng ↔ Quảng Ngãi, Quảng Ngãi ↔ Bình Định và các tuyến liên quan. Giá mềm, đón tận nơi. Gọi hoặc nhắn Zalo để đặt xe.",
   defaultKeywords: [
     "xe ghép",
     "xe ghép đà nẵng quảng ngãi",

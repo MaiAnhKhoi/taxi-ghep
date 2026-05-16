@@ -4,18 +4,18 @@ import { siteConfig } from "@/lib/site";
 
 const routes = [
   {
-    title: "Xe ghép Đà Nẵng ↔ Quảng Ngãi",
-    desc: "Đi công tác/về quê, đón tận nơi, giá rõ ràng.",
+    title: "Quảng Ngãi ↔ Đà Nẵng",
+    desc: "Xe xuất phát Quảng Ngãi — đón tận nơi, giá mềm.",
     href: "/xe-ghep-da-nang-quang-ngai",
   },
   {
-    title: "Xe ghép Quảng Ngãi ↔ Bình Định",
-    desc: "Đi Quy Nhơn linh hoạt, xác nhận nhanh.",
+    title: "Quảng Ngãi ↔ Quy Nhơn",
+    desc: "Đặt từ Quảng Ngãi, đi Quy Nhơn linh hoạt giờ.",
     href: "/xe-ghep-quang-ngai-binh-dinh",
   },
   {
-    title: "Taxi Quảng Ngãi nội thành",
-    desc: "Đưa đón nhanh, hỗ trợ 24/7 theo lịch.",
+    title: "Quảng Ngãi ↔ Măng Đen",
+    desc: "Chỉ nhận chuyến xuất phát Quảng Ngãi.",
     href: "/#dat-xe",
   },
 ] as const;
@@ -29,7 +29,7 @@ export function PopularRoutes() {
             Tuyến đường phổ biến
           </h2>
           <p className="hero-subtext-shadow mt-3 text-sm leading-6 text-white/85 sm:text-base">
-            Tối ưu theo nhu cầu thực tế. Bấm vào tuyến để xem chi tiết và đặt xe nhanh.
+            Các tuyến dưới đây đều xuất phát từ Quảng Ngãi. Bấm vào tuyến để xem chi tiết và đặt xe nhanh.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = buildRouteMetadata({
   slug: "xe-ghep-da-nang-quang-ngai",
   title: "Xe ghép Đà Nẵng ↔ Quảng Ngãi | Đón tận nơi, giá rẻ, chạy liên tục",
   description:
-    "Xe ghép Đà Nẵng ↔ Quảng Ngãi: đón tận nơi, giá rõ ràng, chạy liên tục. Gọi ngay hoặc nhắn Zalo để chốt giờ và điểm đón/trả.",
+    "Xe ghép tuyến Đà Nẵng ↔ Quảng Ngãi — chỉ nhận xe xuất phát Quảng Ngãi. Đón tận nơi, giá hợp lý. Gọi hoặc nhắn Zalo để chốt giờ và điểm đón/trả.",
   keywords: [
     "xe ghép đà nẵng quảng ngãi",
     "taxi đà nẵng quảng ngãi",
@@ -38,8 +38,8 @@ export default function RouteDaNangQuangNgaiPage() {
               Xe ghép Đà Nẵng ↔ Quảng Ngãi
             </h1>
             <p className="mt-4 text-pretty text-base leading-7 text-white/75 sm:text-lg">
-              Đón tận nơi – trả tận nơi, giá rõ ràng, xác nhận nhanh qua điện thoại/Zalo. Phù hợp đi công tác, về quê, đi
-              sân bay, bệnh viện hoặc đặt xe theo giờ.
+              Chỉ nhận chuyến xuất phát từ Quảng Ngãi (đi Đà Nẵng và các hướng liên quan). Đón tận nơi – trả tận nơi, giá
+              rõ ràng, xác nhận nhanh qua điện thoại/Zalo. Phù hợp đi công tác, về quê, sân bay hoặc đặt xe theo giờ.
             </p>
             <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <ButtonLink href={telHref} variant="primary" size="lg">
@@ -191,7 +191,7 @@ export default function RouteDaNangQuangNgaiPage() {
         </Container>
       </section>
 
-      <BookingForm defaultRoute="Đà Nẵng ↔ Quảng Ngãi" />
+      <BookingForm defaultRoute="Quảng Ngãi ↔ Đà Nẵng" />
     </div>
   );
 }

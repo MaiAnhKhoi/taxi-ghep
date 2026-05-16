@@ -9,7 +9,7 @@ export const metadata: Metadata = buildRouteMetadata({
   slug: "xe-ghep-quang-ngai-binh-dinh",
   title: "Xe ghép Quảng Ngãi ↔ Bình Định | Đón tận nơi, giá tốt, đi linh hoạt",
   description:
-    "Xe ghép Quảng Ngãi ↔ Bình Định: đón tận nơi, giá hợp lý, xác nhận nhanh. Gọi ngay hoặc nhắn Zalo để chốt lịch và điểm đón.",
+    "Xe ghép Quảng Ngãi đi Bình Định (Quy Nhơn và lân cận): chỉ nhận xe xuất phát Quảng Ngãi. Đón tận nơi, giá hợp lý. Gọi hoặc nhắn Zalo để chốt lịch.",
   keywords: [
     "xe ghép quảng ngãi bình định",
     "taxi quảng ngãi bình định",
@@ -38,7 +38,8 @@ export default function RouteQuangNgaiBinhDinhPage() {
               Xe ghép Quảng Ngãi ↔ Bình Định
             </h1>
             <p className="mt-4 text-pretty text-base leading-7 text-white/75 sm:text-lg">
-              Đi Quy Nhơn, An Nhơn, Tuy Phước, Phù Cát… nhanh gọn, đón trả tận nơi. Xác nhận lịch nhanh qua hotline/Zalo.
+              Chỉ nhận chuyến xuất phát Quảng Ngãi. Đi Quy Nhơn, An Nhơn, Tuy Phước, Phù Cát… đón trả tận nơi, xác nhận
+              nhanh qua hotline/Zalo.
             </p>
             <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <ButtonLink href={telHref} variant="primary" size="lg">
@@ -180,7 +181,7 @@ export default function RouteQuangNgaiBinhDinhPage() {
         </Container>
       </section>
 
-      <BookingForm defaultRoute="Quảng Ngãi ↔ Bình Định" />
+      <BookingForm defaultRoute="Quảng Ngãi ↔ Quy Nhơn" />
     </div>
   );
 }

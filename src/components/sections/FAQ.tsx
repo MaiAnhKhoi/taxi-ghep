@@ -8,9 +8,9 @@ export const faqItems = [
       "Có. Tài xế đón tận nơi và trả tận nơi theo địa chỉ bạn cung cấp. Bạn chỉ cần gửi vị trí (Zalo) hoặc đọc địa chỉ khi gọi điện.",
   },
   {
-    question: "Giá xe ghép Đà Nẵng ↔ Quảng Ngãi, Quảng Ngãi ↔ Bình Định tính như thế nào?",
+    question: "Giá xe ghép các tuyến xuất phát Quảng Ngãi tính như thế nào?",
     answer:
-      "Giá phụ thuộc điểm đón/trả, số khách, khung giờ và nhu cầu đi gấp. Chúng tôi báo giá trước khi đón để bạn yên tâm, ưu tiên minh bạch và không phát sinh.",
+      "Chúng tôi chỉ nhận xe xuất phát từ Quảng Ngãi. Giá phụ thuộc điểm đón/trả, số khách, khung giờ và nhu cầu đi gấp. Báo giá trước khi đón — minh bạch, không phát sinh ẩn.",
   },
   {
     question: "Có chạy sáng sớm/đêm không?",

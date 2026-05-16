@@ -2,14 +2,12 @@
 
 import { useMemo, useState } from "react";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site";
 
 const routes = [
   "Quảng Ngãi ↔ Đà Nẵng",
   "Quảng Ngãi ↔ Quy Nhơn",
   "Quảng Ngãi ↔ Măng Đen",
-  "Đà Nẵng ↔ Măng Đen",
   "Khác (ghi chú thêm)",
 ] as const;
 
@@ -54,7 +52,7 @@ export function BookingForm({ defaultRoute }: { defaultRoute?: string }) {
                 Zalo:{" "}
                 <a
                   className="font-extrabold text-[color:var(--brand-primary)] hover:underline"
-                  href={siteConfig.zaloUrl}
+                  href={zaloHref}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -78,6 +76,7 @@ export function BookingForm({ defaultRoute }: { defaultRoute?: string }) {
                 <input
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
                   className="mt-2 h-12 w-full rounded-2xl border border-slate-300 bg-white px-4 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-primary)]/30"
                   placeholder="VD: Nguyễn Văn A"
                   autoComplete="name"
@@ -88,6 +87,7 @@ export function BookingForm({ defaultRoute }: { defaultRoute?: string }) {
                 <input
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  required
                   className="mt-2 h-12 w-full rounded-2xl border border-slate-300 bg-white px-4 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-primary)]/30"
                   placeholder="VD: 09xx xxx xxx"
                   inputMode="tel"
@@ -119,14 +119,12 @@ export function BookingForm({ defaultRoute }: { defaultRoute?: string }) {
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2">
-                <a
-                  href={siteConfig.zaloUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-14 items-center justify-center gap-2 rounded-full bg-[var(--cta)] px-6 text-base font-extrabold text-white shadow-[0_12px_30px_-18px_rgba(34,197,94,0.65)]"
+                <button
+                  type="submit"
+                  className="inline-flex h-14 cursor-pointer items-center justify-center gap-2 rounded-full bg-[var(--cta)] px-6 text-base font-extrabold text-white shadow-[0_12px_30px_-18px_rgba(34,197,94,0.65)]"
                 >
                   💬 Gửi Zalo
-                </a>
+                </button>
                 <a
                   href={telHref}
                   className="inline-flex h-14 items-center justify-center gap-2 rounded-full bg-[var(--cta)] px-6 text-base font-extrabold text-white shadow-[0_12px_30px_-18px_rgba(34,197,94,0.65)]"
