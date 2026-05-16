@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   description: siteConfig.defaultDescription,
   keywords: [...siteConfig.defaultKeywords],
   alternates: { canonical: "/" },
+  icons: {
+    icon: [{ url: siteConfig.logoSrc, type: "image/png" }],
+    apple: siteConfig.logoSrc,
+  },
   openGraph: {
     type: "website",
     locale: "vi_VN",

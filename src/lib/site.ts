@@ -1,5 +1,7 @@
 export const siteConfig = {
   brand: "Taxi Quảng Ngãi",
+  /** Logo trong thư mục `public` (ví dụ file `public/logo.png` → `/logo.png`). */
+  logoSrc: "/logo.png",
   siteUrl: "https://example.com",
   phoneE164: "+84905418433",
   phoneDisplay: "0905 418 433",

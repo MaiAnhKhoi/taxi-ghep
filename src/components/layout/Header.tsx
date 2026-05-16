@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
@@ -8,8 +9,15 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-extrabold tracking-tight text-slate-900">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[color:var(--brand-primary)] text-white shadow-sm">
-            <span>TX</span>
+          <span className="relative inline-flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200/90">
+            <Image
+              src={siteConfig.logoSrc}
+              alt={siteConfig.brand}
+              width={36}
+              height={36}
+              className="object-contain"
+              priority
+            />
           </span>
           <span className="hidden sm:inline">{siteConfig.brand}</span>
           <span className="sm:hidden">Taxi</span>

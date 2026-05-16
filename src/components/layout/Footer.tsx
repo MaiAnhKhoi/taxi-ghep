@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/lib/site";
@@ -7,7 +8,18 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-white text-slate-900">
       <Container className="grid gap-10 py-12 md:grid-cols-3">
         <div className="space-y-3">
-          <div className="text-lg font-bold">{siteConfig.brand}</div>
+          <div className="flex items-center gap-3">
+            <span className="relative inline-flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200/90">
+              <Image
+                src={siteConfig.logoSrc}
+                alt=""
+                width={44}
+                height={44}
+                className="object-contain"
+              />
+            </span>
+            <div className="text-lg font-bold leading-tight">{siteConfig.brand}</div>
+          </div>
           <p className="text-sm text-slate-600">
             Xe ghép tuyến miền Trung: đón tận nơi, chạy liên tục, giá rõ ràng. Ưu tiên an toàn – đúng giờ – phục vụ
             24/7 theo lịch.
