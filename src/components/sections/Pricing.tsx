@@ -10,7 +10,7 @@ const pricing = [
   },
   {
     route: "Quảng Ngãi ↔ Quy Nhơn",
-    price: "350.000đ",
+    price: "200.000đ",
     note: "Giá mềm, linh hoạt giờ — chỉ nhận chuyến từ Quảng Ngãi.",
     href: "/xe-ghep-quang-ngai-binh-dinh",
   },
